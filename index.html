@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<title>Анкета</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Шрифты -->
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+
+    <!-- Стили -->
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css">
+    <link rel="stylesheet" href="css/reset.css" >
+    <link rel="stylesheet" href="css/style.css" >
+   </head>
+  <body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <img src="img/CSSSR.png" alt='Логотип' />
+                </div>
+            <img src="img/shtamp.png" class="shtamp" alt='Штамп'/>
+            <div class="clear"></div>
+        </header>
+        <h1>
+            <img src="img/delo.png" alt="" />
+        </h1>
+        <section class='form'>
+            <form>
+                <label for='fio'>Полное ФИО</label><input type="text" id='fio' value="Челпанов Александр Сергеевич" placeholder="Иванов Иван Иванович" />
+                <label for='god'>Год рождения</label><input type="text" id='god' value="1986" placeholder="1970" />
+                <label for='gorod'>Место жительства</label><input type="text" id='gorod' value="г. Кохтла-Ярве, Эстония" placeholder="Город" />
+                <label for='skype'>Скайп</label><input type="text" id='skype' value="Alexander.Chelpanov" placeholder="skype" />
+                <label for='email'>Почта</label><input type="text" id='email' value="achelpanov86@gmail.com" placeholder="email@email.com" />
+                <div class="clear"></div>
+                <p class='academy'>Выпускник <a href="http://htmlacademy.ru" title="HTML - academy" target="_blank">htmlacademy.ru</a></p>
+                <div class="radio passive" data-hidden='radio-academy'>Да</div>
+                <div class="radio active" data-hidden='radio-academy'>Нет</div>
+                <input type="hidden" class="radio-academy" value="0">
+                <div class="clear"></div>
+                <p>Практические навыки</p>
+                <p class="desc">Отметьте только те технологии и типы задач, с которыми вы хорошо знакомы. Отсутсвие опыта отнюдь не означает, что у вас меньше шансов стать нашим сотрудником. Это означает, что вы будете получать те задачи, с которыми гарантировано будете справляться.</p>
+                <ul class="skills first">
+                    <li><div class="checkbox" data-value=''>Методология БЭМ</div></li>
+                    <li><div class="checkbox check" data-value=''>JQuery</div></li>
+                    <li><div class="checkbox" data-value=''>Использую GRUNT</div></li>
+                    <li><div class="checkbox" data-value=''>HAML</div></li>
+                    <li><div class="checkbox" data-value=''>SASS</div></li>
+                    <li><div class="checkbox" data-value=''>LESS</div></li>
+                    <li><div class="checkbox" data-value=''>CoffeeScript</div></li>
+				</ul>
+                <ul class="skills second">
+                    <li><div class="checkbox" data-value=''>Jade</div></li>
+                    <li><div class="checkbox" data-value=''>Stylus</div></li>
+                    <li><div class="checkbox" data-value=''>Знаю (изучаю) Angular</div></li>
+                    <li><div class="checkbox" data-value=''>Верстка под Android</div></li>
+                    <li><div class="checkbox" data-value=''>Верстка под iOS</div></li>
+                    <li><div class="checkbox" data-value=''>Верстка под Windows Phone</div></li>
+                </ul>
+                <ul class="skills third">
+                    <li><div class="checkbox" data-value=''>Верстка рассылок</div></li>
+                    <li><div class="checkbox" data-value=''>Адаптивная верстка</div></li>
+                    <li><div class="checkbox check" data-value=''>Использую Dropbox</div></li>
+                    <li><div class="checkbox check" data-value=''>Использую Gmail</div></li>
+                    <li><div class="checkbox check" data-value=''>Использую GitHub</div></li>
+                </ul>
+                <div class="clear"></div>
+                <p class="js">Уровень владения JavaScript</p>
+                <div id="slider"></div>
+                <ul class="names">
+                    <li>Не владею</li>
+                    <li>Использую готовые решения</li>
+                    <li>Использую готовые решения и умею их переделывать</li>
+                    <li>Пишу сложные скрипты</li>
+                </ul>
+                <div class="clear"></div>
+                <label for='date'>Дата заполнения</label><input type="text" id='date' value="10.01.2015" placeholder="01.01.1970" />
+            </form>
+        </section>
+    </div>
+
+   
+   
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+    <script src='js/script.js'></script>
+  </body>
+</html>
